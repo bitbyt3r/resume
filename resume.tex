@@ -1,0 +1,71 @@
+% LaTeX resume using resume.cls
+\documentclass[line,0.5]{resume} 
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\usepackage[margin=0.5in]{geometry}
+\addtolength{\textwidth}{-0.5in}
+\begin{document}
+
+\name{Mark Murnane}
+% \address used twice to have two lines of address
+\address{1222 Locust Ave Arbutus, MD 21227}
+\address{(240) 547-9517, mark@hackafe.net}
+
+\begin{resume}
+\section{EDUCATION}
+University of Maryland, Baltimore County \\
+Computer Engineering B.S. \\
+Expected graduation: December 2016
+ 
+\section{SKILLS} {\sl Programming}
+                \begin{itemize}
+                \item Languages: Java, C, Python, C\#, Javascript, Verilog, x86 ASM
+                \item Realtime and Embedded Systems, Application Development, Web Development
+                \item Many open source contributions to personal and existing projects
+                \end{itemize}
+                {\sl Linux/Unix:}
+                \begin{itemize}
+                \item Configuration Management (Puppet/CFEngine/Salt)
+                \item Automated Provisioning and Orchestration
+                \item Experience with RHEL/CentOS, Fedora, Arch, Debian
+                \end{itemize}
+                {\sl Electronics}
+                \begin{itemize}
+                \item Digital Circuit Design
+                \item Schematic Design and PCB Layout
+                \item Integrated Circuit Design
+                \end{itemize}
+ 
+\section{EXPERIENCE}
+  {\sl University of Maryland, Baltimore County} \hfill 2012-2016 \\
+    Computer Science and Electrical Engineering Department \\
+    Systems Administrator
+    \begin{itemize}
+      \item Managed 300+ CentOS Linux and Windows Hosts
+      \item Designed and implemented clustered container environment providing high availability for a number of services
+      \item Built custom imaging software to clone disk images to many hosts simultaneously
+      \item Directly responsible for maintaining critical services for faculty and staff
+      \end{itemize}
+  {\sl University of Maryland, Baltimore County} \hfill August 2015-Present \\
+    Imaging Research Center \\
+    Research Assistant
+    \begin{itemize}
+      \item Wrote software to operate a custom photogrammetry machine (web interface, realtime hardware controller, and clustered image processing)
+      \item Wrote WebGL-based model viewer to demonstrate models produced by the photogrammetry rig
+      \item Worked with a resident artist to build computer-vision based interactive art
+    \end{itemize}
+  {\sl Direct Dimensions Inc.} \hfill Summer 2015 \\
+    Intern
+    \begin{itemize}
+      \item Designed and constructed embedded hardware to control a photogrammetry rig
+      \item Wrote software to control distributed cameras, flashes, projectors and custom hardware in realtime with sub-millisecond timing
+    \end{itemize}
+  {\sl MAGFest Inc.} \hfill 2012-Present \\
+    Department Head, TechOps (Volunteer Work)
+    \begin{itemize}
+      \item Managed a team of volunteers before and during events
+      \item Helped deploy more than 100 Linux systems over a weekend
+      \item Designed and helped implement clustered environment for mission-critical services
+    \end{itemize}
+\end{resume}
+\end{document}
