@@ -1,5 +1,7 @@
+\title{Resume}
+
 % LaTeX resume using resume.cls
-\documentclass[line,0.5]{resume} 
+\documentclass[line]{resume} 
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 \usepackage[margin=0.5in]{geometry}
@@ -8,35 +10,70 @@
 
 \name{Mark Murnane}
 % \address used twice to have two lines of address
-\address{1222 Locust Ave Arbutus, MD 21227}
+\address{437 Sudbury Road, Linthicum, MD 21090}
 \address{(240) 547-9517, mark@hackafe.net}
 
 \begin{resume}
 \section{EDUCATION}
-University of Maryland, Baltimore County \\
-Computer Engineering B.S. \\
-Expected graduation: December 2016
- 
+University of Maryland, Baltimore County\\
+B.S. Computer Engineering (VLSI Track) 2018\\
+M.S. Computer Science In Progress 2019-Present
+
 \section{SKILLS} {\sl Programming}
                 \begin{itemize}
-                \item Languages: Java, C, Python, C\#, Javascript, Verilog, x86 ASM
-                \item Realtime and Embedded Systems, Application Development, Web Development
+                \item Languages: Python, C\#, C, Javascript, Verilog, x86 ASM
+                \item Frameworks: Flask, Django, Vue, Unity
+                \item Realtime and Embedded Systems, Application Development, Web Development, Game Development
                 \item Many open source contributions to personal and existing projects
                 \end{itemize}
                 {\sl Linux/Unix:}
                 \begin{itemize}
-                \item Configuration Management (Puppet/CFEngine/Salt)
-                \item Automated Provisioning and Orchestration
-                \item Experience with RHEL/CentOS, Fedora, Arch, Debian
+                \item Configuration Management (Salt, Puppet)
+                \item Automated Provisioning, Monitoring and Orchestration (Both of baremetal and cloud systems)
+                \item Significant Experience with RHEL/CentOS, Fedora, Arch, Debian Linux
                 \end{itemize}
                 {\sl Electronics}
                 \begin{itemize}
                 \item Digital Circuit Design
-                \item Schematic Design and PCB Layout
-                \item Integrated Circuit Design
+                \item Schematic Design and PCB Layout (KiCad)
+                \item Medium Scale PCB Manufacturing (10,000 units)
                 \end{itemize}
  
+\section {PUBLICATIONS}
+  \begin{itemize}
+      \item HRIVR: Human-Robot Interactions in Virtual Reality \\
+        2021 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), Pending
+      \item Extending CoNavigator into a Collaborative Digital Space \\
+        Companion of the 2020 ACM International Conference on Supporting Group Work
+      \item Virtual Reality and Photogrammetry for Improved Reproducibility of Human-Robot Interaction Studies \\
+        2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), 1092-1093
+      \item Learning from human-robot interactions in modeled scenes \\
+        ACM SIGGRAPH 2019 Posters, 1-2
+  \end{itemize}
+ 
 \section{EXPERIENCE}
+  {\sl University of Maryland, Baltimore County} \hfill January 2019-Present \\
+    Office of Research Development \\
+    Core Facility Specialist
+    \begin{itemize}
+        \item Supported core research facilities by writing software and designing new hardware to support existing researchers while growing facility capabilities and user base
+        \item Ported existing applications to run on the UMBC High-Performance Compute Facility, Taki
+        \item Collaborated with researchers to produce scholarly works
+    \end{itemize}
+  {\sl University of Maryland, Baltimore County} \hfill August 2015-December 2018 \\
+    Imaging Research Center \\
+    Faculty Research Assistant
+    \begin{itemize}
+      \item Designed and developed software to operate a custom photogrammetry system (web interface, realtime hardware controller, and clustered image processing)
+      \item Wrote WebGL-based model viewer to demonstrate models produced by the photogrammetry system
+      \item Architected and implemented MapTu, a collaborative 3D space with data analysis tools
+      \item Worked with Eric Dyer, a resident artist, to build computer-vision based interactive art
+    \end{itemize}
+  {\sl Direct Dimensions Inc.} \hfill Summer 2015
+    \begin{itemize}
+      \item Designed and constructed embedded hardware to control a photogrammetry system
+      \item Wrote software to control distributed cameras, flashes, projectors and custom hardware in realtime with sub-millisecond timing
+    \end{itemize}
   {\sl University of Maryland, Baltimore County} \hfill 2012-2016 \\
     Computer Science and Electrical Engineering Department \\
     Systems Administrator
@@ -44,28 +81,34 @@ Expected graduation: December 2016
       \item Managed 300+ CentOS Linux and Windows Hosts
       \item Designed and implemented clustered container environment providing high availability for a number of services
       \item Built custom imaging software to clone disk images to many hosts simultaneously
-      \item Directly responsible for maintaining critical services for faculty and staff
+      \item Directly responsible for maintaining critical services for faculty, students, and staff
       \end{itemize}
-  {\sl University of Maryland, Baltimore County} \hfill August 2015-Present \\
-    Imaging Research Center \\
-    Research Assistant
+  {\sl MAGFest Inc.} (Volunteer Work) \hfill 2012-Present \\
+    Department Head, TechOps \\
+    Event Chair, MAGStock \\
+    Board of Directors Advisory Committee
     \begin{itemize}
-      \item Wrote software to operate a custom photogrammetry machine (web interface, realtime hardware controller, and clustered image processing)
-      \item Wrote WebGL-based model viewer to demonstrate models produced by the photogrammetry rig
-      \item Worked with a resident artist to build computer-vision based interactive art
+      \item Manages a team of more than 150 volunteers through multiple annual events
+      \item Administrates systems supporting 1,700 volunteers and 25,000 attendees
+      \item Spearheaded efforts to enact new policies and practices across the organization including the formation of a task force to address sexual harassment incidents and the development of an Emergency Response Plan
+      \item Designed and manufactured a series of interactive printed circuit board badges to attendees at events. Produced four different designs to suit event needs, with production runs ranging fifty units to several thousand
     \end{itemize}
-  {\sl Direct Dimensions Inc.} \hfill Summer 2015 \\
-    Intern
-    \begin{itemize}
-      \item Designed and constructed embedded hardware to control a photogrammetry rig
-      \item Wrote software to control distributed cameras, flashes, projectors and custom hardware in realtime with sub-millisecond timing
-    \end{itemize}
-  {\sl MAGFest Inc.} \hfill 2012-Present \\
-    Department Head, TechOps (Volunteer Work)
-    \begin{itemize}
-      \item Managed a team of volunteers before and during events
-      \item Helped deploy more than 100 Linux systems over a weekend
-      \item Designed and helped implement clustered environment for mission-critical services
-    \end{itemize}
+    
+\section{Projects}
+    {\sl Tuber} (https://github.com/magfest/tuber) \hfill Python, Javascript \\
+        Event management software. Tracks volunteer shifts, hotel room placements, and other business logic. Currently used by MAGFest Inc. as part of its infrastructure to track 1,700 volunteers. Includes a multi-threaded web-based roommate matching system that allows for interactive selection of optimal roommates based on arbitrary criteria.
+        
+    $\mu$CMD (https://github.com/bitbyt3r/ucmd) \hfill Python, Electronics \\
+        High altitude balloon tracker and bidirectional message relay system. Combines multiple radio modules with different characteristics to allow messages to be routed quickly and reliably. Has been flown by the UMD Space Systems Lab high altitude balloon program.
+        
+    {\sl HRIVR } (Currently private, pending publication) \hfill C\#, Python, Javascript, Electronics \\
+        Simulator for modelling human-robot interactions in VR. Combines a game engine with a robotics simulator and exposes a standard interface allowing physical robots to be fully modelled in virtual reality. Due to COVID-19, the project pivoted to allowing users to be remote from the main simulator while doing local calculation to keep latency low enough for VR.
+        
+    {\sl Hoverboard } (https://github.com/bitbyt3r/hoverboard-firmware) \hfill C, Electronics, CAD, 3D-Printing, Welding \\
+        Built my own self-balancing two-wheeled hoverboard. Built from the ground-up from metal stock as an excuse to learn to weld. The control loop is written in C and runs on a BeagleBone Black single-board computer. 
+        
+    {\sl Photogrammetry Rig } (http://photogrammetry.irc.umbc.edu/) \hfill C, AVR Assembly, Python, Javascript, Electronics \\
+        Built the electronics and software for UMBC's photogrammetry rig. Uses custom circuit boards to perform real-time sequencing of the cameras and ancillary hardware. Uses a distributed system to synchronize camera timing across the network, reconfigure the cameras, transfer images to a Ceph storage cluster and prepare them for processing. Has a web interface for configuration and control.
+        
 \end{resume}
 \end{document}
